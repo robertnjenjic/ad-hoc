@@ -16,7 +16,7 @@ import org.junit.jupiter.api.BeforeAll;
  */
 public abstract class BaseIT {
 
-    public static WebTarget target;
+    private static String API_URL = "http://localhost:8085/ad-hoc/reports";
     private static Client client;
 
     @BeforeAll
@@ -26,16 +26,14 @@ public abstract class BaseIT {
 
     private WebTarget getTarget() {
         return client
-                .target("http://localhost:8085/ad-hoc/reports");
+                .target(API_URL);
     }
 
     protected List<Object> getEntity(Map<String, List<Object>> params) {
         Response response = getResponse(params);
 
-        List<Object> entity = response.readEntity(new GenericType<List<Object>>() {
+        return response.readEntity(new GenericType<List<Object>>() {
         });
-
-        return entity;
     }
 
     protected Response getResponse(Map<String, List<Object>> params) {
