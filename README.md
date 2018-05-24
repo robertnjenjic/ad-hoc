@@ -84,8 +84,8 @@ mvn package && java -jar target/{verion}
 ``` 
 
 ## Demo
-- [Application (REST API Swagger)](http://localhost:8085/swagger/index.html)
-- [Database (H2)](http://localhost:8085/h2-console)
+- Application (REST API Swagger): [http://localhost:8085/swagger/index.html](http://localhost:8085/swagger/index.html)
+- Database (H2): [http://localhost:8085/h2-console](http://localhost:8085/h2-console)
 
 ## Tools
 - [Spring Boot](https://projects.spring.io/spring-boot/)
