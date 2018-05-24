@@ -1,7 +1,7 @@
 # Ad-hoc reports
 Reporting service that lets you generate ad-hoc reports.
 
-The service support drill-downs and roll-ups:
+The service supports drill-downs and roll-ups:
 - on dimensions: **_DATE_**, **_CAMPAIGN_ID_**, **_CAMPAIGN_NAME_**, **_AD_ID_**, **_AD_NAME_** and
 - on metrics: **_IMPRESSIONS_**, **_CLICKS_**, **_INTERACTIONS_**, **_SWIPES_**, **_PINCHES_**, **_TOUCHES_**, **_UNIQUE_USERS_**
 
@@ -73,8 +73,12 @@ The command below will run the application server, configure it and deploy the a
 ```bash
 mvn clean install spring-boot:run
 ```
+or
+```bash
+mvn spring-boot:run
+```
 
-Or you can build a jar and run it with command below.
+or you can build a jar and run it like a standalone application
 ```bash
 mvn package && java -jar target/{verion}
 ``` 
@@ -88,6 +92,7 @@ mvn package && java -jar target/{verion}
 - [Swagger](https://swagger.io/)
 - [REST API](https://jersey.github.io/)
 - [Database H2](http://www.h2database.com/)
+- [Apache Tomcat](http://tomcat.apache.org/)
 
 ## License
 Copyright (c) 2018 Robert Njenjić
