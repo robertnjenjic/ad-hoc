@@ -33,7 +33,7 @@ class TimeRangeUtilsTest {
         TimeRange last_6_months = TimeRangeUtils.parse("last_6_months");
         assertTrue(last_6_months != null);
 
-        TimeRange all = TimeRangeUtils.parse("all");
+        TimeRange all = TimeRangeUtils.parse(null);
         assertTrue(all != null && all.getFrom() == null && all.getTo() == null);
     }
 
